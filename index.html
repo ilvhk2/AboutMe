@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Resume</title>
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+<style>
+		body { background-color: #ccffff;}
+		h1 {color: white; text-align: center; font-size:25px;}
+		h2 {color: black; text-align: left;font-size:15px;}
+		p {font-family: DIN Offc; font-size:15px; color:red;}
+		td { font-family: Comic Sans MS; font-size:12px;}		
+		#e1{ color:red; font-size:12px;}
+		.class1  {text-align:center; color: white; font-size:14px;}
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: PINK;
+    padding: 14px 16px;
+    background-color: PURPLE;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: YELLOW;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+} 
+</style>
+</head>
+<body lang=EN-US link=blue vlink="#954F72" style='tab-interval:.5in'  bgcolor="ccffff">
+
+<table>
+</table>
+
+    <!-- Tab links -->
+<div class="tab"><h3>
+  <button class="tablinks" onclick="openInfo(event, 'job1')">Census Bureau</button>
+  <button class="tablinks" onclick="openInfo(event, 'job2')">National Center for Health Statistics<br>1990-1996</br></button>
+  <button class="tablinks" onclick="openInfo(event, 'job3')">Group Health<br>1996-1997</br></button>
+  <button class="tablinks" onclick="openInfo(event, 'job4')">Fred Hutchinson Cancer Research Center<br>1997</br></button>
+  <button class="tablinks" onclick="openInfo(event, 'job5')">Boeing <br>SAS Programmer<br>1998-2004</br></button>
+  <button class="tablinks" onclick="openInfo(event, 'job6')">Boeing <br>Pl/Sql EBus Programmer<br>2004-2018</br></button>  
+</div>
+
+<div id="job1" class="tabcontent">
+   <ul>
+	<li>
+   </ul>
+</div>
+<div id="job2" class="tabcontent">
+<ul>
+<li>Participated in research activities related with the Mortality Surveillance System (MSS) including the evaluation of final national mortality data.
+<li>Compared results from fitted MSS model to final and to provisional data. 
+<li>Applied time series regression models to selected cause of death data sets. Displayed results in graphs and tabulate format.
+<li>Generalized variance curves for National Health Interview Surveys (NHIS) data using SUDAAN software.
+<li>Wrote and present papers at professional meetings such as ASA and regional SAS Users Group.
+</ul>
+</div>
+
+<script>
+function openInfo(evt, tabName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+	// Hide all elements with class="tabcontent" by default */
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+     tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+     document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+} 
+</script>
+</body>
+</html>
