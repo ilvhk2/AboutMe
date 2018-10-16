@@ -3,125 +3,62 @@
 <head>
 	<title>Resume</title>
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
-<style>
-		body { background-color: #ccffff;}
-		h1 {color: darkblue; text-align: center; font-size:25px;}
-		h2 {color: black; text-align: left;font-size:15px;}
-		p {font-family: DIN Offc; font-size:15px; color:red;}
-		td { text-align: center; font-size:20px;}		
-		#e1{ color:red; font-size:12px;}
-		.class1  {text-align:center; color: white; font-size:14px;}
-.navbar {
-    overflow: hidden;
-    background-color: #333;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.navbar a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
-
-.dropdown .dropbtn {
-    font-size: 16px;    
-    border: none;
-    outline: none;
-    color: PINK;
-    padding: 14px 16px;
-    background-color: PURPLE;
-    font-family: inherit;
-    margin: 0;
-}
-
-.navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: red;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover {
-    background-color: YELLOW;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/* Style the tab */
-.tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-}
-
-/* Style the buttons that are used to open the tab content */
-.tab button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-    background-color: #ddd;
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-    background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-} 
-</style>
+	<link rel="stylesheet" href="css/stylesheet.css">
 </head>
-<body lang=EN-US link=blue vlink="#954F72" style='tab-interval:.5in'  bgcolor="ccffff">
+<body>
+<header>
 <center><h1>Jessica Chan </h1></center>
-<table width="100%">
-<tr><center><td width="20%"><center>Technical Skill</td><td width="20%">Education</td><td width="20%">Publication</td><td width="20%">Award</td>
-<td width="20%">Contact</td>
-</center></tr>
-<tr></tr>
-<tr></tr>
-<tr></tr>
-</table>
-<p>
 
-<center><h1>Employment</h1></center>
+<div class="navbar">
+
+	<div class="dropdown">
+	<button class="dropbtn"></i>Technical Skill</button>
+    <div class="dropdown-content">	
+		<p>SAS: Macro, Graph, Tabulate, STAT, IML, Regression Analysis
+		<br>Oracle E-Business Suite Module: Work in Process, Bill of Material, Purchase Order, Inventory
+		<br>Web: HTML5, CSS
+		<br>Programming Lanuage: PL/SQL, Fortran, Java
+		<br>Other: Ansible, Puppet, Docket
+
+  	  </div>
+	</div> 
+
+
+    <div class="dropdown">
+    <button class="dropbtn"></i>Education</button>
+    <div class="dropdown-content">		
+<p>B.S. in Mathematics, University of Washington, WA. (June 1988)
+<br>B.S. in Statistics, University of Washington, WA. (June 1988)
+<br>UNIX & Linux Administration Certificate (completed 6/2017)
+<br>Java Programming Certificate(completed 6/2015)
+<br>Oracle Applications Development Certificate (completed 8/2002)
+	  </div>
+    </div>
+
+	<div class="dropdown">
+	<button class="dropbtn">Publication</button>
+	<div class="dropdown-content">			
+		<p>Methods to Display a "Y*X=Z/Overlay" Picture, Jessica Y. Chan and Julie Smith, presented at 1992 Northeast SAS Users Group and published in the NESUG proceedings.
+<br>Evaluation of Alternative Models for Surveillance of Monthly Mortality Data, Myron Katzoff, Jessica Chan, and Randy Curtin, published in the journal of Statistics in Medicine.
+<br>Analytic Limitations to Current National Health Surveys, Van Parsons, Jessica Chan, and Randy Curtin, presented at 1990 American Statistical Association Poster Session and published in the ASA proceedings.
+	  </div>
+    </div>    
+   
+	<div class="dropdown">
+	  <button class="dropbtn">Award</button>
+	  <div class="dropdown-content">		
+		<p>Boeing Outstanding Performance Award, 2016 and 2004
+		<br>Boeing Pride Excellent Award, 2015, 2014, 2013, 2010, and 2009
+		<br>Boeing E-card Recognition, 2018
+		<br>National Center for Health Statistics On-the-Spot Award, Sept. 1996	
+	  </div>
+	  </div>
+	
+</div>	
+
+</header>
+
+<center><h2>Employment</h2></center>
     <!-- Tab links -->
 <div class="tab"><h3>
   <button class="tablinks" onclick="openInfo(event, 'job2')"><b>National Center for Health Statistics</b><br>Biomedical Mathematical Statistician<br>1989-1996</br></button>
@@ -138,10 +75,10 @@
 </h4>
    <ul>
 	<li>Maintained and modified quality control of survey methodology.
-    <li>Provided general statistical and methodological support for ongoing Economic Surveys Division
+   <li>Provided general statistical and methodological support for ongoing Economic Surveys Division
     <li>projects, including the Survey of Minority-Owned Business Enterprises.
-    <li>Wrote computer specifications for programmers.
-    <li>Wrote FORTRAN and SAS programs for non-response adjustment.
+    <li>Wrote computer specifications for programmers.
+    <li>Wrote FORTRAN and SAS programs for non-response adjustment.
     <li>Monitored and managed the Quality Control program and wrote procedures.
    </ul>
 </div>
